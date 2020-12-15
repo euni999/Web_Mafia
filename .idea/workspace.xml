@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fae328d3-7c0f-41e9-8b43-b6718928c061" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/main.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/main.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -38,6 +38,7 @@
     <property name="javascript.nodejs.core.library.configured.version" value="15.4.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.13" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -71,7 +72,7 @@
       <workItem from="1607924884814" duration="4941000" />
       <workItem from="1607937084493" duration="4723000" />
       <workItem from="1608030187676" duration="1889000" />
-      <workItem from="1608032085464" duration="1103000" />
+      <workItem from="1608032085464" duration="3278000" />
     </task>
     <servers />
   </component>
