@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link href="public/stylesheets/main.css" rel="stylesheet">
+        <title>Web_Mafia</title>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <% include Header.html %>
+        </header>
+        <!--자동 슬라이드-->
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="../images/movie1.PNG" style="width:100%">
+            <div class="text">Caption One</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="../images/movie2.PNG" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="../images/movie3.PNG" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="square" style = "width : 31%"></span>
+            <span class="square" style = "width : 31%"></span>
+            <span class="square" style = "width : 31%"></span>
+        </div>
+        <!-- 밑에 나오는 글 or 내용 ? -->
+        <div class = "content">
+            <div class = "content1" style = "margin-left : 5%; margin-right : 10%">
+                <h2 style = "margin-left : 5%">Story</h2>
+                <hr align = "left" style = "width : 25%">
+                <p>지혜는 날카로우나 갑 속에 든 칼이다. 청춘의 끓는 피가 아니더면 인간이 얼마나 쓸쓸하랴? 얼음에 싸인 만물은 얼음이 있을 뿐이다.
+                    그들에게 생명을 불어 넣은 것은 따뜻한 봄바람이다 풀밭에 속잎나고 가지에 싹이 트고 꽃 피고 새 우는 봄날의 천지느 얼마나 기쁘며 얼마나 아름다우냐? 이것을 얼음속에서 불러 내는
+                    것이 따듯한 봄바람이다. 청춘의 끓는 피다.</p>
+                <br>
+            </div>
+            <div class = "content2" style = "margin-left : 5%; margin-right : 10%">
+                <h2 style = "margin-left : 5%">Rank</h2>
+                <hr align = "left" style = " width : 25%">
+                <div class = "rank_table">
+                <div class = "DAY_RANK">
+                    <h4>Day</h4>
+                    <table border = "0">
+                        <th bgcolor = "#C3C7C9">NAME</th>
+                        <th bgcolor = "#E6E6E7">SCORE</th>
+                        <tr>
+                            <td>닉네임1</td>
+                            <td>점수</td>
+                        </tr>
+                        <tr>
+                            <td>닉네임2</td>
+                            <td>점수</td>
+                        </tr>
+                        <tr>
+                            <td>닉네임3</td>
+                            <td>점수</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class = "WEEK_RANK">
+                    <h4>Week</h4>
+                    <table border = "0">
+                        <th bgcolor = "#C3C7C9">NAME</th>
+                        <th bgcolor = "#E6E6E7">SCORE</th>
+                        <tr>
+                            <td>닉네임1</td>
+                            <td>점수</td>
+                        </tr>
+                        <tr>
+                            <td>닉네임2</td>
+                            <td>점수</td>
+                        </tr>
+                        <tr>
+                            <td>닉네임3</td>
+                            <td>점수</td>
+                        </tr>
+                    </table>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
+        <script>
+            <!--슬라이드 함수-->
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var squares = document.getElementsByClassName("square");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                for (i = 0; i < squares.length; i++) {
+                    squares[i].className = squares[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                squares[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <footer>
+            <% include ./bottom_play_btn.ejs %>
+            <% include ./footer.ejs %>
+        </footer>
+    </body>
+</html>
